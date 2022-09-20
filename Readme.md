@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Артём Ризаханов](https://up.htmlacademy.ru/htmlcss/35/user/2211575).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
