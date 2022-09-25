@@ -2,17 +2,19 @@
 
 
 
-.logo {
-  position: absolute;
-  width: 140px;
-  height: 70px;
-  left: 70px;
+
 
 
 }
 
 
-.header {
+ .main-logo {
+  background-image: url('/img/index-background.svg');
 
 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+
+  background-size: cover;
 }
