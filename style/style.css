@@ -5,11 +5,11 @@
 
 
 
-}
+
 
 
  .main-logo {
-  background-image: url('/img/index-background.svg');
+  background-image: url('#');
 
 
   background-repeat: no-repeat;
