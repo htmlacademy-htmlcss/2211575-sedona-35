@@ -1,0 +1,21 @@
+.promo-logo {
+  background: url(../images/index-background.jpg) center
+  no-repeat;
+  width: 1200px;
+  height: 485px;
+
+}
+
+.mailing {
+  background: url(../images/Subscribe_bg.jpg) center
+  no-repeat;
+  width: 1200px;
+  height: 414px;
+}
+
+.inner-header {
+  background: url(../images/catalog-bg.jpg) center
+  no-repeat;
+  width: 1200px;
+  height: 414px;
+}
