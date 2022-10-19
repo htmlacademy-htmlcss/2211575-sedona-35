@@ -1,6 +1,229 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2);
+
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2);
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+
+
+}
+
+.page-header {
+  background: #ffffff;
+  color: #000000;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+
+}
+
+.icon-12 {
+  background-color: #7DB54F;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.here {
+  background: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 .inner-header {
-  background: url(../images/catalog-bg.jpg) center
-  no-repeat;
+  background: url(../images/catalog-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  color: black;
+  background-color: white;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: white;
+}
+
+.breadcrumbs {
+  color: white;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+color: white;
+}
+
+.control {
+  font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+color: white;
+}
+
+.catalog-button {
+  background: #82B3D3;
+  color: white;
+  border: none;
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+
+}
+
+.drop-button {
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: white;
+background: none;
+border: none;
+}
+
+.catalog {
+  font-family: "PT Sans";
+  color: #333333;
+  background-color: white;
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}
+
+.search {
+  text-transform: uppercase;
+  font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+
+.product-list-link {
+  font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+color: #000000;
+}
+
+.product-list-price {
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #333333;
+}
+
+.product-list-more-info  {
+  background: #756157;
+  color: white;
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+
+.product-list-top {
+  background: #82B3D3;
+  color: white;
+  font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+text-decoration: none;
+
+}
+
+.true {
+  background: #7DB54F
+}
+
+.star {
+  color:#83B3D3;
+
+}
+
+.top {
+  background: #F2F2F2;
+  text-transform: uppercase;
+  font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+color: #000000;
+}
+
+.pagination-link {
+  background: #82B3D3;
+  color: white;
+  text-decoration: none;
+}
+
+.pagination-current {
+  background: #F2F2F2;
+  color: black;
+}
+
+.mailing {
+
   width: 1200px;
   height: 414px;
+  background-color: #ffffff;
+  text-align: center;
+
+
 }
+
+.mailing-title {
+  font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.mailing-text {
+  color: #333333;
+  font-weight: 400;
+font-size: 22px;
+line-height: 26px;
+}
+
+.mailing-button {
+  background: #82B3D3;
+  border: none;
+  color: white;
+
+}
+
+.footer-contacts-address-phone {
+  text-align: center;
+text-transform: uppercase;
+text-decoration: none;
+color: black;
+font-weight: 400;
+font-size: 40px;
+line-height: 40px;
+ }
+
+ li {
+  list-style-type: none; /* Убираем маркеры */
+ }
