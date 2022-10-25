@@ -21,6 +21,11 @@ body {
 
 }
 
+.container {
+  margin:0 auto;
+  width: 1200px;
+}
+
 .page-header {
   background: #ffffff;
   color: #000000;
@@ -195,6 +200,12 @@ margin-right: auto;
     background: #82B3D3;
     border: none;
     color: white;
+
+  }
+
+
+  .container-footer {
+    display: flex;
 
   }
 
