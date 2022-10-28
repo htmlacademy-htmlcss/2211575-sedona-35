@@ -155,7 +155,7 @@ body {
 
   position: relative;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 10pxr;
   width: 20px;
   height: 20px;
   display: block;
@@ -472,7 +472,7 @@ body {
 
 
 .mailing-container {
-  background: url(../images/Subscribe-bg.jpg) center no-repeat;
+  background: url(../images/subscribe-bg.jpg) center no-repeat;
   width: 1200px;
   height: 414px;
   background-color: #ffffff;
