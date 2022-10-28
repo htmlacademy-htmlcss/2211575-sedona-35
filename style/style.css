@@ -141,18 +141,10 @@ body {
 
 }
 
-.cotainer-12 {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  display: block;
-  background-color: #7DB54F;
-  border-radius: 10px;
 
-}
 
 .icon-12 {
-
+  text-align: center;
   position: relative;
   margin-top: 10px;
   margin-right: 10pxr;
@@ -204,37 +196,7 @@ body {
 
 
 
-/* .here {
-  background: #756157;
-  border-radius: 4px;
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 0;
 
-} */
-
-/* .here-text {
-  display: flex;
-  margin-left: 34px;
-  padding: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-
-  text-transform: uppercase;
-} */
-
-/* .here-container {
-  display: flex;
-  width: 160px;
-  height: 36px;
-  margin-top: 14px;
-  background: #756157;
-  border-radius: 4px;
-  margin-left: 33px;
-
-
-}  */
 
 
 .main-container {
