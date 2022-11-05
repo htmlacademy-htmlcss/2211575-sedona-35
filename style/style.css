@@ -13,20 +13,71 @@
   src: url(../fonts/ptsans-700.woff2);
 }
 
-body {
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
+html {
+  height: 100%;
+  background: #F2F2F2;
+  margin: 0 auto;
+  width: 1280px;
 
 
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  width: 1280px;
+
+
+
+
+
+
+}
+
+
+
 .page-header {
+  margin: 0 auto;
+  width: 1200px;
+  height: 64px;
   background: #ffffff;
   color: #000000;
 }
 
+.navigation {
+  display: flex;
+  width: 1200px;
+  height: 64px;
+
+}
+
+.logo {
+  margin-left: 70px;
+  position: relative;
+}
+
+.navigation-list {
+  margin: 0 0 0 28px;
+  padding: 0;
+
+
+}
+
+.navigation-container {
+  display: flex;
+  width: 339px;
+  justify-content: space-between;
+
+
+}
+
 .navigation-link {
+
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -35,50 +86,177 @@ body {
   text-align: center;
   text-transform: capitalize;
   text-decoration: none;
+  display: block;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+
+
+
+
+.navigation-user {
+  margin: 0 70px 0 auto;
+  padding: 0;
+}
+
+.user-container {
+  width: 268px;
+  display: flex;
+}
+
+
+
+
+
+
+
+.search {
+  display: block;
+  margin: 22px 0 0 10px;
+  width: 20px;
+  height: 20px;
 
 }
+
+.favorites {
+  display: flex;
+  margin: 25px 0 0 25px;
+  width: 18px;
+  height: 17px;
+
+
+}
+
+
 
 .icon-12 {
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  margin-right: 10pxr;
+  width: 20px;
+  height: 20px;
+  display: block;
   background-color: #7DB54F;
-  color: #ffffff;
   border-radius: 10px;
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+
+
+
+
+
 }
 
-.here {
+
+.here-container {
+  display: block;
+  width: 160px;
+  height: 36px;
+  margin-top: 14px;
+  margin-left: auto;
   background: #756157;
   border-radius: 4px;
-  color: #FFFFFF;
+
+
+
+}
+
+
+
+.here-text {
+  display: block;
   text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  margin: 10px 34px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  width: 92px;
+  height: 20px;
+
+
+}
+
+
+
+
+
+
+.main-container {
+  flex-grow: 1;
+}
+
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-header {
+  margin: 0 0 0;
+}
+
+
+.promo {
+  display: block;
 }
 
 
 
 .promo-logo {
-  background: url(../images/index-background.jpg) no-repeat,center;
+  background: url(../images/index-background.jpg) no-repeat, center;
   width: 1200px;
-  height: 485px;
+  height: 483px;
   color: #000000;
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
 
 }
 
 .img-welcome {
-  margin-top: 51px;
-  margin-left: 371px;
+  display: block;
+  margin: 50px auto 25px;
 }
 
 .vector {
-  margin-top: 20px;
+
+
+  margin: 0;
+
+
+
+}
+
+
+.sedona-container {
+  height: 214px;
+  margin: 0;
+  padding-top: 69px;
+  background-color: white;
+
 }
 
 .advantages-sedona {
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin: 0 auto;
+  width: 620px;
 }
+
+
 
 .advantages-more {
   font-weight: 400;
@@ -88,8 +266,40 @@ body {
 
 .advantages-list {
   font-family: "PT Sans", sans-serif;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
 
 }
+
+.advantages-item {
+  width: 400px;
+  height: 384px;
+  text-align: center;
+
+}
+
+.advantages-block {
+  justify-content: space-between;
+  display: flex;
+
+
+}
+
+.advantages-block2 {
+  display: flex;
+  padding: 0;
+
+}
+
+.vector-icon {
+  padding-top: 8px;
+
+
+}
+
 
 .blue-background {
   background: #82B3D3;
@@ -111,6 +321,11 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 92px;
+  width: 175px;
+  height: 56px;
+  margin: 0 auto;
+  padding-bottom: 30px;
 
 }
 
@@ -119,6 +334,38 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  width: 230px;
+  height: 63px;
+  margin: 0 auto;
+  padding-top: 30px;
+
+}
+
+.description-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 28px;
+  margin: 0;
+}
+
+.description-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  width: 230px;
+  height: 63px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.total-container {
+  background-color: white;
+  width: 1200px;
+  height: 406px;
 
 }
 
@@ -131,6 +378,8 @@ body {
   line-height: 36px;
   color: #000000;
   text-align: center;
+  margin: 0;
+  padding-top: 96px;
 }
 
 .total-text {
@@ -139,26 +388,36 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  padding-top: 20px;
+
+  width: 592px;
+  margin: 0 auto;
 
 }
 
 .border {
+  display: flex;
+  border-radius: 4px;
   width: 376px;
-height: 52px;
-background-color: #756157;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
+  height: 52px;
+  background-color: #756157;
+  text-align: center;
+  margin: 54px auto;
+
+
 
 }
 
 .total-button {
+  margin: 0 auto;
+  padding-top: 8px;
+  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   color: #ffffff;
 
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-decoration: none;
 }
 
@@ -167,50 +426,153 @@ margin-right: auto;
 
 
 
-  .mailing {
-    background: url(../images/Subscribe-bg.jpg) center no-repeat;
-    width: 1200px;
-    height: 414px;
-    background-color: #ffffff;
-    text-align: center;
-    color: white;
+.mailing-container {
+  background: url(../images/subscribe-bg.jpg) center no-repeat;
+  width: 1200px;
+  height: 414px;
+  background-color: #ffffff;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
 
-  }
 
-  .mailing-title {
-    font-weight: 700;
+}
+
+.mailing-title {
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  }
+  padding-top: 96px;
+}
 
-  .mailing-text {
+.mailing-text {
 
-    font-weight: 400;
+  width: 475px;
+  height: 52.51px;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  }
+  margin: 0 auto;
+  padding-top: 20px;
+}
 
-  .mailing-button {
-    background: #82B3D3;
-    border: none;
-    color: white;
+.form {
+  padding-top: 54px;
+  width: 684px;
+  height: 52px;
+  display: flex;
+  margin: 0 auto;
+}
 
-  }
+.e-mail {
+  width: 452px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+
+}
+
+.mailing-button {
+  background: #82B3D3;
+  border: none;
+  color: white;
+  width: 232px;
+  height: 52px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+
+
+}
+
+
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  background-color: white;
+  width: 1200px;
+  height: 120px;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+}
+
+.social {
+  position: absolute;
+  display: flex;
+  margin-left: 70px;
+  margin-top: 58px;
+  width: 142px;
+  height: 40px;
+}
 
 
 
 
- .footer-contacts-address-phone {
+.footer-contacts-address-phone {
+  height: 40px;
+  width: 331px;
+
+
   text-align: center;
-text-transform: uppercase;
-text-decoration: none;
-color: black;
-font-weight: 400;
-font-size: 40px;
-line-height: 40px;
- }
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  margin-top: 45px;
+  margin-left: 448px;
+}
 
- li {
-  list-style-type: none; /* Убираем маркеры */
- }
+.htmlacademy-link {
+  height: 32.9px;
+width: 114.9px;
+
+border-radius: 0;
+
+  margin-left: 235px;
+  margin-top: 48px;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+hr {
+  width: 60px;
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+.black {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+
+.footer-butoon {
+  margin-left: 11px;
+  margin-right: 11px;
+  display: block;
+  text-decoration: none;
+  width: 22px;
+  height: 17px;
+}
+
+.visually-hidden {
+  display: none;
+}
