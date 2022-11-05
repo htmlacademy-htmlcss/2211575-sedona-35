@@ -108,20 +108,7 @@ body {
 
 
 
-/* .user-link {
 
-
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-  background-color: #ffffff;
-  text-align: center;
-  text-transform: capitalize;
-  text-decoration: none;
-  padding-top: 22px;
-
-} */
 
 
 .search {
@@ -209,6 +196,10 @@ body {
   margin: 0 auto;
 }
 
+.inner-header {
+  margin: 0 0 0;
+}
+
 
 .promo {
   display: block;
@@ -219,7 +210,7 @@ body {
 .promo-logo {
   background: url(../images/index-background.jpg) no-repeat, center;
   width: 1200px;
-  height: 485px;
+  height: 483px;
   color: #000000;
   background-color: #ffffff;
   display: flex;
@@ -236,8 +227,10 @@ body {
 }
 
 .vector {
-  display: flex;
-  margin-bottom: auto;
+
+
+  margin: 0;
+
 
 
 }
@@ -396,7 +389,7 @@ body {
   line-height: 26px;
   text-align: center;
   padding-top: 20px;
-  margin: 0;
+
   width: 592px;
   margin: 0 auto;
 
@@ -475,6 +468,8 @@ body {
 
 .e-mail {
   width: 452px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 
 }
 
@@ -512,27 +507,20 @@ body {
 .social {
   position: absolute;
   display: flex;
-  padding-right: px;
+  margin-left: 70px;
+  margin-top: 58px;
+  width: 142px;
+  height: 40px;
 }
 
-.vector-vk {
-  padding-left: 82px;
-  padding-top: 58px;
 
-}
-
-.vector-telegram {
-  padding-left: 26px;
-  padding-top: 56px;
-}
-
-.vector-youtube {
-  padding-left: 27px;
-  padding-top: 56px;
-}
 
 
 .footer-contacts-address-phone {
+  height: 40px;
+  width: 331px;
+
+
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
@@ -540,13 +528,18 @@ body {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  padding-top: 45px;
-  padding-left: 448px;
+  margin-top: 45px;
+  margin-left: 448px;
 }
 
 .htmlacademy-link {
-  padding-left: 235px;
-  padding-top: 48px;
+  height: 32.9px;
+width: 114.9px;
+
+border-radius: 0;
+
+  margin-left: 235px;
+  margin-top: 48px;
 }
 
 li {
@@ -572,7 +565,12 @@ hr {
 
 
 .footer-butoon {
+  margin-left: 11px;
+  margin-right: 11px;
+  display: block;
   text-decoration: none;
+  width: 22px;
+  height: 17px;
 }
 
 .visually-hidden {
