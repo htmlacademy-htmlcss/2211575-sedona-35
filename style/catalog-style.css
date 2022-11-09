@@ -19,7 +19,7 @@ html {
   height: 100%;
   background: #F2F2F2;
   margin: 0 auto;
-  width: 1280px;
+  width: 1200px;
 
 
 }
@@ -28,11 +28,11 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  width: 1280px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  min-height: 100%;
 
 }
 
@@ -55,6 +55,11 @@ body {
   width: 140px;
   margin-left: 70px;
   position: relative;
+}
+
+.logo-link:focus {
+  opacity: 0.8;
+  outline: none;
 }
 
 
@@ -91,6 +96,20 @@ body {
   margin: 0 16px;
 }
 
+.navigation-link:hover  {
+  transition: 0.2s;
+   opacity: 0.5;
+
+
+ }
+
+ .navigation-link:focus  {
+  outline: none;
+   opacity: 0.5;
+
+
+ }
+
 
 .you-here {
   height: 2px;
@@ -124,8 +143,16 @@ height: 64px;
 height: 64px;
 }
 
+.user-item:hover {
+  transition: 0.2s;
+  opacity: 0.5;
+}
 
 
+.focus:focus {
+  opacity: 0.5;
+  outline: none;
+}
 
 
 
@@ -155,6 +182,11 @@ height: 64px;
 
 .link-12 {
   text-decoration: none;
+}
+
+.link-12:focus {
+    opacity: 0.5;
+    outline: none;
 }
 
 .icon-12 {
@@ -206,6 +238,7 @@ line-height: 10px;
 
 .here-text:hover {
   background: #615048;
+  transition: 0.2s;
 }
 
 .here-text:active {
@@ -213,8 +246,15 @@ line-height: 10px;
 
 }
 
+.here-text:focus {
+  background: #615048;
+  outline: none;
+
+}
+
 .main-container {
   flex-grow: 1;
+  background-color: white;
 }
 
 .page-container {
@@ -272,12 +312,22 @@ line-height: 10px;
 
 }
 
+.breadcrumbs-link:focus {
+  outline: none
+}
+
+.breadcrumbs-link:focus>svg {
+  fill:rgba(255, 255, 255, 0.6);
+
+}
+
 .breadcrumbs-house{
   fill: white;
 }
 
 .breadcrumbs-house:hover{
   fill:rgba(255, 255, 255, 0.6);
+  transition: 0.2s;
 }
 
 .breadcrumbs-house:active{
@@ -306,6 +356,135 @@ line-height: 10px;
   height: 157px;
 }
 
+
+.price {
+  display: flex ;
+  width: 288px;
+height: 160px;
+border: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 140px;
+
+}
+
+.range-wrapper-inputs {
+  margin-top: 32px;
+  display: flex;
+  width: 288px;
+height: 48px;
+justify-content: space-between;
+
+
+}
+
+
+
+.range-input {
+  border: none;
+  padding: 0;
+  width: 143px;
+height: 48px;
+border-radius: 4px 0 0 4px;
+outline: none;
+
+}
+
+.range-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-input:active {
+  outline: 3px solid black;
+}
+
+.range-wrapper-inputs::before {
+  position: absolute;
+  content: "от";
+  margin-left: 106px;
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.5;
+
+}
+
+.range-wrapper-inputs::after {
+  position: absolute;
+  content: "до";
+  margin-left: 248px;
+  margin-top: 12px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0.5;
+
+}
+
+.range-input-right {
+  border-radius: 0 4px 4px 0;
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+
+}
+
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 48px;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+}
+
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #6F7577;
+  width: 61px;
+  left: 227px;
+  border-radius: 2px;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+
+
 .catalog-filter-list {
   margin: 0;
   margin-top: 32px;
@@ -318,6 +497,8 @@ line-height: 10px;
 
 .infrastructure {
   margin-right: 70px;
+  width: 150px;
+height: 157px;
 
 }
 
@@ -344,6 +525,7 @@ line-height: 10px;
 
 .catalog-button:hover {
   background: #68A2CA;
+  transition: 0.2s;
 }
 
 .catalog-button:active {
@@ -366,6 +548,7 @@ line-height: 10px;
 
 .drop-button:hover {
   color: rgba(255, 255, 255, 0.6);
+  transition: 0.2s;
 }
 
 .drop-button:active {
@@ -429,6 +612,7 @@ height: 1235px;
 
 .select-control:hover {
   border-color: #68A2CA;
+  transition: 0.2s;
 }
 
 .select-control:active {
@@ -446,6 +630,7 @@ height: 1235px;
 
 .catalog-group:hover {
   border: 3px solid #000000;
+  transition: 0.2s;
 }
 .catalog-group:active {
   border: 3px solid #000000;
@@ -541,10 +726,16 @@ height: 1235px;
 
 .product-list-more-info:hover {
   background: #615048;
+  transition: 0.2s;
 
 }
 .product-list-more-info:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.product-list-more-info:focus {
+  background: #615048;
+  outline: none;
 }
 
 .product-list-top {
@@ -565,10 +756,17 @@ height: 1235px;
 
 .product-list-top:hover {
   background:  #68A2CA;
+  transition: 0.2s;
 
 }
 .product-list-top:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.product-list-top:focus {
+  background:  #68A2CA;
+  outline: none;
+
 }
 
 .star-and-top {
@@ -607,73 +805,63 @@ height: 1235px;
 }
 
 .paginator-container {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 70px;
   margin-top: 40px;
   display: flex;
-  width: 1060px;
+  width: 400px;
 height: 60px;
-}
-
-.pagination-item {
-  padding-top: 20px;
-  text-align: center;
-  width: 60px;
-
-background: #82B3D3;
-border-radius: 4px;
-margin-right: 8px;
+justify-content: space-between;
 }
 
 .pagination-link {
-
-  padding: 18px 20px;
-
-  color: white;
+  display: flex;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+color: white;
   text-decoration: none;
+  background: #82B3D3;
+  border-radius: 4px;
+
 }
 
-.pagination-current {
-  background: #F2F2F2!important;
+
+
+
+ .pagination-current {
+  background: #F2F2F2;
+  color: black;
 }
 
-.pagination-current-link {
-  color: #000000!important;
-}
 
-.pagination-item:hover {
+
+ .pagination-link:hover {
   background: #68A2CA;
+  transition: 0.2s;
+ }
+
+ .pagination-link:focus {
+  background: #68A2CA;
+  outline: none;
+ }
+
+ .pagination-current:hover {
+  background: #F2F2F2;
+  color: black;
 }
 
-.pagination-link:active {
-  color: rgba(255, 255, 255, 0.3);
 
-}
+
 
 .ellipsis {
-  background-color: #ffffff !important;
+  background: #ffffff ;
+  color: black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ellipsis:hover {
+  background: #ffffff ;
+  color: black;
+}
 
 
 
@@ -693,6 +881,16 @@ margin-right: 8px;
   color: white;
 }
 
+.control-input {
+  width: 20px;
+  height: 20px;
+  color: #333333;
+  background-color: #82B3D3;
+  border-radius: 4px;
+
+
+}
+
 
 
 
@@ -701,6 +899,12 @@ margin-right: 8px;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+}
+
+.product-list-link:focus {
+  outline: none;
+  opacity: 0.8;
+
 }
 
 .product-list-price {
@@ -721,12 +925,20 @@ margin-right: 8px;
 
 .true:hover {
   background: #6C9E42;
+  transition: 0.2s;
 
 
 }
 
 .true:active {
   color: rgba(255, 255, 255, 0.3);
+
+}
+
+.true:focus {
+  background: #6C9E42;
+
+
 
 }
 
@@ -796,11 +1008,17 @@ border-radius: 4px 0 0 4px;
 
 .mailing-button:hover {
   background: #68A2CA;
+  transition: 0.2s;
 }
 
 .mailing-button:active {
   color: rgba(255, 255, 255, 0.3);
 
+}
+
+.mailing-button:focus {
+  background: #68A2CA;
+  outline: none;
 }
 
 
@@ -837,12 +1055,23 @@ border-radius: 4px 0 0 4px;
   height: 17px;
 }
 
+.footer-butoon:focus {
+  outline: none;
+}
+
+.footer-butoon:focus>svg {
+  fill: #68A2CA;
+
+
+}
+
 .vk {
   fill:#83B3D3;
 }
 
 .vk:hover {
   fill: #68A2CA;
+  transition: 0.2s;
 }
 
 .vk:active {
@@ -856,6 +1085,7 @@ border-radius: 4px 0 0 4px;
 
 .telegram:hover {
   fill: #68A2CA;
+  transition: 0.2s;
 }
 
 .telegram:active {
@@ -868,6 +1098,7 @@ border-radius: 4px 0 0 4px;
 
 .youtube:hover {
   fill: #68A2CA;
+  transition: 0.2s;
 }
 
 .youtube:active {
@@ -896,10 +1127,17 @@ border-radius: 4px 0 0 4px;
 
 .footer-contacts-address-phone:hover {
   color: #756157;
+  transition: 0.2s;
 }
 
 .footer-contacts-address-phone:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-contacts-address-phone:focus {
+  color: #756157;
+  transition: 0.2s;
+  outline: none;
 }
 
 .htmlacademy-link {
@@ -918,9 +1156,20 @@ border-radius: 0;
 
 .htmlacademy-link-svg:hover {
   fill:  #756157;
+  transition: 0.2s;
 }
 .htmlacademy-link-svg:active {
   fill: rgba(117, 97, 87, 0.3);
+}
+
+.htmlacademy-link:focus {
+  outline: none;
+}
+
+
+.htmlacademy-link:focus>svg {
+  fill: #756157;
+
 }
 
 ul {
