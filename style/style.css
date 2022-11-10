@@ -48,7 +48,7 @@ body {
   width: 1200px;
   height: 64px;
   background: #ffffff;
-  color: #000000;
+  color: black;
 }
 
 .navigation {
@@ -83,7 +83,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  color: #000000;
+  color: black;
   background-color: #ffffff;
   text-align: center;
   text-transform: capitalize;
@@ -296,7 +296,7 @@ body {
   background: url(../images/index-background.jpg) no-repeat, center;
   width: 1200px;
   height: 483px;
-  color: #000000;
+  color: black;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -335,7 +335,7 @@ body {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-  color: #000000;
+  color: black;
   text-transform: uppercase;
   margin: 0 auto;
   width: 620px;
@@ -462,7 +462,7 @@ body {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
+  color: black;
   text-align: center;
   margin: 0;
   padding-top: 96px;
@@ -754,18 +754,36 @@ body {
 }
 
 .modal-close-button {
+  width: 14px;
+height: 14px;
   position: absolute;
-  padding: 0;
   margin: 64px 0 0 613px;
-  width: 52px;
-height: 52px;
-  background-color: #ffffff;
+ padding: 26px;
+  background-color: #F2F2F2;
+  border-radius: 50%;
   border: none;
-  background-image: url("../images/vector-icon/modal-close.svg");
+  background-image: url("../images/vector-icon/modal-close1.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
+.modal-close-button:focus {
+  outline: 3px solid #83B3D3;
+
+}
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  transition: 0.2s;
+}
+.modal-close-button:active {
+  opacity: 0.3;
+  outline: none;
+
+}
+
+
+
+
 
 .modal-title {
   width: 413px;
@@ -776,7 +794,7 @@ height: 36px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -784,7 +802,7 @@ height: 36px;
   margin: 0;
 }
 
-.mobal-container {
+.modal-input-container {
   margin-top: 64px  ;
   margin-left: 70px;
   display: flex;
@@ -792,7 +810,7 @@ height: 36px;
 height: 48px;
 }
 
-.mobal-text {
+.modal-text {
   margin-top: auto;
   margin-bottom: auto;
   width: 113px;
@@ -805,7 +823,6 @@ white-space:nowrap;
 .search-form-field {
   margin-left: 18px;
   border: none;
-  background-color: #F2F2F2;
 border-radius: 4px;
   width: 440px;
 height: 48px;
@@ -813,19 +830,16 @@ font-weight: 700;
 font-size: 18px;
 line-height: 24px;
 padding-left: 20px;
+background: url(../images/vector-icon/calendars.svg) no-repeat;
+background-position:top 16px left 402px ;
+background-color: #F2F2F2;
+
 
 }
 
-.search-form-field::-webkit-calendar-picker-indicator {
-  padding: 2px 2px 3px;
-  width: 20px;
-height: 20px;
-  margin-top: 14px;
-  background: url(../images/vector-icon/calendars.svg)no-repeat;
-  opacity: 0.3;
-}
 
-.mobal-subtext {
+
+.modal-subtext {
   margin: 4px 0 0 227px;
   font-weight: 400;
 font-size: 16px;
@@ -834,12 +848,12 @@ color: #333333;
 
 }
 
-.mobal-error {
+.modal-error {
   color: #FF5757;
 
 }
 
-.mobal-container2 {
+.modal-container2 {
   margin-top: 23px  ;
   margin-left: 70px;
   display: flex;
@@ -847,7 +861,7 @@ color: #333333;
 height: 48px;
 }
 
-.mobal-text2 {
+.modal-text2 {
   margin-top: auto;
   margin-bottom: auto;
   width: 119px;
@@ -858,14 +872,14 @@ white-space:nowrap;
 
 }
 
-.mobal-container3 {
+.modal-container3 {
   margin: 23px 0 0 70px;
   width: 577px;
 height: 48px;
   display: flex;
 }
 
-.mobal-text3 {
+.modal-text3 {
   margin: auto 46px auto 0;
   font-weight: 700;
 font-size: 20px;
@@ -877,13 +891,45 @@ height: 24px;
 .minus {
   padding: 0;
 border: none;
+width: 40px;
+height: 48px;
+outline: none;
 }
 
+.minus-container {
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
+}
+
+
+
+
 .vector-minus {
-  padding: 24px 13px;
+  fill:#CDC7C4;
   width: 14px;
 height: 2px;
 }
+
+.minus:hover > div > svg {
+  fill:black;
+  opacity: none;
+
+}
+
+.minus:focus > div {
+  outline: solid #82B3D3;
+  border-radius: 4px;
+
+}
+
+.minus:active > div > svg , .minus:active > div {
+  fill:#CDC7C4;
+  opacity: none;
+  outline: none;
+}
+
+
 
 .field-number {
   padding: 0;
@@ -897,16 +943,46 @@ text-align: center;
 .plus {
   padding: 0;
 border: none;
+outline: none;
+width: 40px;
+height: 48px;
 }
+
+.plus-container {
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
+}
+
+
+
 
 .vector-plus {
-  padding: 17px 12px;
+  fill:#CDC7C4;
   width: 14px;
-  height: 14px;
+height: 14px;
+margin-top: 3px;
+}
+
+.plus:hover > div > svg {
+  fill:black;
+  opacity: none;
 
 }
 
-.mobal-text4 {
+.plus:focus > div {
+  outline: solid #82B3D3;
+  border-radius: 4px;
+
+}
+
+.plus:active > div > svg , .plus:active > div {
+  fill:#CDC7C4;
+  opacity: none;
+  outline: none;
+}
+
+.modal-text4 {
   font-weight: 700;
 font-size: 20px;
 line-height: 24px;
@@ -941,7 +1017,25 @@ border-radius: 10px;
 
 }
 
-.modal-container-clos {
+.search-button:hover {
+  background: #68A2CA;
+  transition: 0.2s;
+
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+}
+
+
+.search-button:focus {
+  background: #68A2CA;
+  outline: none;
+
+}
+
+.modal-container-close {
   display: none;
 }
 
@@ -1381,25 +1475,27 @@ height: 1235px;
 
   width: 48px;
   height: 48px;
-  border: 3px solid #E5E5E5;
+  outline: 3px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
 }
 
 .catalog-group:hover {
-  border: 3px solid #000000;
+  outline: 3px solid black;
   transition: 0.2s;
 }
-.catalog-group:active {
-  border: 3px solid #000000;
 
-}
 .catalog-group:focus {
   outline: #68A2CA 3px solid;
 }
 
+.catalog-group:active {
+  outline: 3px solid black;
+
+}
+
 .button-active {
-  border: 3px solid #000000;
+  outline: 3px solid black;
   border-radius: 4px;
 }
 
@@ -1544,7 +1640,7 @@ height: 1235px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: #000000;
+  color: black;
   border-radius: 4px;
   text-align: center;
   padding-top: 9px;
@@ -1696,7 +1792,7 @@ height: 23px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
+  color: black;
   text-decoration: none;
 }
 
