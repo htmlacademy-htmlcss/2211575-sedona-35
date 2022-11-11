@@ -287,8 +287,11 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-left: 70px;
+  height: 21px;
+  font-size: 0;
+  line-height: 0;
 }
 
 .house {
@@ -623,7 +626,7 @@ input[type=number] {
 
   width: 48px;
   height: 48px;
-  border: 3px solid #E5E5E5;
+  outline: 3px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 8px;
 }
