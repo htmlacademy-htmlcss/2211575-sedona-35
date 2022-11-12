@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/vector-icon/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
     <title>Каталог</title>
     <link rel="stylesheet" href="style/style.css">
   </head>
@@ -16,7 +16,7 @@
 
       <nav class="navigation">
         <a class="logo-link" href="index.html">
-          <img src="images/logo.svg" width="140" height="70" alt="Логотип SEDONA">
+          <img src="images/vector-icon/logo.svg" width="140" height="70" alt="Логотип SEDONA.">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -35,7 +35,7 @@
 
           <li class="user-item">
             <a href="#" class="search focus">
-              <img class="" src="images/vector-icon/search.svg" width="18" height="18" alt="Поиск">
+              <img class="" src="images/vector-icon/search.svg" width="18" height="18" alt="Поиск.">
               <span class="visually-hidden">
                 Поиск
               </span>
@@ -43,7 +43,7 @@
           </li>
           <li class="user-item">
             <a href="#" class="favorites focus">
-              <img class="s" src="images/vector-icon/favorites.svg" width="18" height="17" alt="Избранное">
+              <img class="s" src="images/vector-icon/favorites.svg" width="18" height="17" alt="Избранное.">
               <span class="visually-hidden">
                 Избранное
               </span>
@@ -72,7 +72,7 @@
             <ol class="breadcrumbs">
               <li class="breadcrumbs-item house">
                 <a class="breadcrumbs-link" href="index.html">
-                  <svg class="breadcrumbs-house" width="13" height="13" viewBox="0 0 13 13" fill="none"
+                  <svg aria-label="дом" role="img" class="breadcrumbs-house" width="13" height="13" viewBox="0 0 13 13" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path
                       d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z" />
@@ -81,7 +81,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item pointer">
-                <img src="images/vector-icon/pointer.svg" alt="">
+                <img width="6px" height="10px" src="images/vector-icon/pointer.svg" alt="">
               </li>
               <li class="breadcrumbs-item hotel">
                 <span class="breadcrumbs-link">Гостиницы</span>
@@ -98,40 +98,52 @@
                   <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="checkbox" name="pool">
-                      <label class="control checkbox"></label>
-                      <p class="control-input-text">Бассейн</p>
+                      <label class="control option  " >
+                        <input class="control-input" type="checkbox" name="pool">
+                        <span class="control-box"></span>
+                        Бассейн
+                      </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="checkbox" name="parking">
-                      <label class="control checkbox"></label>
-                      <p class="control-input-text">Парковка</p>
+                      <label class="control option  " >
+                        <input class="control-input" type="checkbox" name="parking" >
+                        <span class="control-box"></span>
+                        Парковка
+                      </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      <label class="control checkbox"></label>
-                      <p class="control-input-text">Wi-Fi</p>
+                      <label class="control option  " >
+                        <input class="control-input" type="checkbox" name="wi-fi">
+                        <span class="control-box"></span>
+                        Wi-Fi
+                      </label>
                     </li>
 
                   </ul>
                 </fieldset>
                 <fieldset class="catalog-filter-group housing">
-                  <legend class="catalog-filter-title">Тип жилья:</legend>
+                  <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="radio" name="type of housing" value="hostel">
-                      <label class="control radio"> </label>
-                      <p class="control-input-text">Гостиница</p>
+                      <label class="radio-control option " >
+                        <input class="radio-control-input " value="hostel" type="radio" name="housing">
+                        <span class="radio-control-box "></span>
+                        Гостиница
+                      </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="radio" name="type of housing" value="motel" checked>
-                      <label class="control radio"></label>
-                      <p class="control-input-text">Мотель</p>
+                      <label class="radio-control option  " >
+                        <input class="radio-control-input" value="motel" type="radio" name="housing">
+                        <span class="radio-control-box"></span>
+                        мотель
+                      </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <input class="control-input" type="radio" name="type of housing" value="apartments">
-                      <label class="control radio"></label>
-                      <p class="control-input-text">Апартаменты</p>
+                      <label class="radio-control option  " >
+                        <input class="radio-control-input" value="apartments" type="radio" name="housing">
+                        <span class="radio-control-box"></span>
+                        Апартаменты
+                      </label>
                     </li>
                   </ul>
                 </fieldset>
@@ -143,9 +155,9 @@
 
                     <div class="range-wrapper-inputs">
 
-                      <input class="range-input" type="number" value="450" name="min-price">
+                      <input class="range-input" type="number" name="min-price">
 
-                      <input class="range-input range-input-right" type="number" value="1500" name="max-price">
+                      <input class="range-input range-input-right" type="number" name="max-price">
 
 
                     </div>
@@ -182,13 +194,16 @@
 
 
             <a href="#" class="button  catalog-group">
-              <img class="img-button button-active" src="images/vector-icon/filter-button1.svg" alt="Показать карточки">
+              <img class="img-button button-active" src="images/vector-icon/filter-button1.svg" alt="Показать карточки."
+                width="16px" height="14px">
             </a>
             <a class="button catalog-group" href="#">
-              <img class="img-button" src="images/vector-icon/filter-button2.svg" alt="показать большие окна">
+              <img class="img-button" src="images/vector-icon/filter-button2.svg" alt="Показать большие окна."
+                width="16px" height="14px">
             </a>
             <a class="button button-and catalog-group" href="#">
-              <img class="img-button" src="images/vector-icon/filter-button3.svg" alt="Показать список">
+              <img class="img-button" src="images/vector-icon/filter-button3.svg" alt="Показать список." width="16px"
+                height="14px">
             </a>
           </div>
 
@@ -197,7 +212,7 @@
             <li class="product-list">
               <a class="product-list-link" href="#">
                 <img class="product-list-image" src="images/hotel/hotel-1.jpg" width="300" height="212"
-                  alt="Вид ночного небо из пещеры ">
+                  alt="Вид ночного небо из пещеры.">
                 <h3 class="product-list-title">Amara Resort & Spa</h3>
               </a>
               <div class="name-and-price">
@@ -209,8 +224,9 @@
                 <a class="product-list-top button" href="#">в Избранное</a>
               </div>
               <div class="star-and-top">
-                <span class="star"> <img class="star-img" src="images/vector-icon/stars4.svg"
-                    alt="четыри звезды"></span>
+                <span class="star">
+                  <img class="star-img" src="images/vector-icon/stars4.svg" alt="четыри звезды." width="140px" height="37px">
+                </span>
                 <span class="top">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -219,7 +235,7 @@
             <li class="product-list">
               <a class="product-list-link" href="#">
                 <img class="product-list-image" src="images/hotel/hotel-2.jpg" width="300" height="212"
-                  alt="Скалы позади которых большое облоко и радуга">
+                  alt="Скалы позади которых большое облоко и радуга.">
                 <h3 class="product-list-title">Villas at Poco Diablo</h3>
               </a>
               <div class="name-and-price">
@@ -231,7 +247,8 @@
                 <a class="product-list-top button true" href="#">в Избранном</a>
               </div>
               <div class="star-and-top">
-                <span class="star"><img src="images/vector-icon/stars4.svg" alt="четыри звезды"></span>
+                <span class="star"><img src="images/vector-icon/stars4.svg" alt="четыри звезды." width="140px" height="37px">
+                </span>
                 <span class="top">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -240,7 +257,7 @@
             <li class="product-list">
               <a class="product-list-link" href="#">
                 <img class="product-list-image" src="images/hotel/hotel-3.jpg" width="300" height="212"
-                  alt="Скалы на фоне ясного неба">
+                  alt="Скалы на фоне ясного неба.">
                 <h3 class="product-list-title">Desert Quail Inn</h3>
               </a>
               <div class="name-and-price">
@@ -252,7 +269,7 @@
                 <a class="product-list-top button" href="#">в Избранное</a>
               </div>
               <div class="star-and-top">
-                <span class="star"> <img src="images/vector-icon/stars3.svg" alt="три звезды"></span>
+                <span class="star"> <img src="images/vector-icon/stars3.svg" alt="три звезды." width="140px" height="37px"></span>
                 <span class="top">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -261,7 +278,7 @@
             <li class="product-list">
               <a class="product-list-link" href="#  ">
                 <img class="product-list-image" src="images/hotel/hotel-4.jpg" width="300" height="212"
-                  alt="Скалы на фоне ночного неба">
+                  alt="Скалы на фоне ночного неба.">
                 <h3 class="product-list-title">GreenTree Inn</h3>
               </a>
               <div class="name-and-price">
@@ -273,7 +290,7 @@
                 <a class="product-list-top button" href="#">в Избранное</a>
               </div>
               <div class="star-and-top">
-                <span class="star"><img src="images/vector-icon/stars2.svg" alt="две звезды"></span>
+                <span class="star"><img src="images/vector-icon/stars2.svg" alt="две звезды." width="140px" height="37px"></span>
                 <span class="top">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -300,7 +317,7 @@
         </section>
 
         <div class="catalog-mailing-container">
-          <h2 class="catalog-mailing-title">Подпишись на рассылку</h2>
+          <h2 class="catalog-mailing-title">Подпишитесь на рассылку</h2>
           <p class="catalog-mailing-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="e-mail" type="text" placeholder="Ваш e-mail" name="mailing-mail" required>
@@ -319,7 +336,7 @@
 
             <li class="footer-social-item">
               <a href="https://vk.com/htmlacademy" class="footer-butoon">
-                <svg class="vk" width="25" height="15" viewBox="0 0 25 15" fill="none"
+                <svg aria-label="vk" role="img" class="vk" width="25" height="15" viewBox="0 0 25 15" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17044 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z" />
@@ -329,7 +346,7 @@
             </li>
             <li class="footer-social-item">
               <a href="https://t.me/htmlacademy" class="footer-butoon">
-                <svg class="telegram" width="18" height="16" viewBox="0 0 18 16" fill="none"
+                <svg  aria-label="telegram" role="img" class="telegram" width="18" height="16" viewBox="0 0 18 16" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M16.785 0.955705L0.840489 7.1042C-0.247661 7.54126 -0.241365 8.14828 0.640845 8.41897L4.73445 9.69597L14.2058 3.72014C14.6537 3.44766 15.0629 3.59424 14.7265 3.89281L7.05283 10.8183H7.05103L7.05283 10.8192L6.77045 15.0387C7.18413 15.0387 7.36669 14.8489 7.59871 14.625L9.58705 12.6915L13.7229 15.7464C14.4855 16.1664 15.0332 15.9506 15.2229 15.0405L17.9379 2.2453C18.2158 1.13107 17.5126 0.626562 16.785 0.955705Z" />
@@ -339,7 +356,7 @@
             </li>
             <li class="footer-social-item">
               <a href=" https://www.youtube.com/user/htmlacademyru" class="footer-butoon">
-                <svg class="youtube" width="23" height="18" viewBox="0 0 23 18" xmlns="http://www.w3.org/2000/svg">
+                <svg  aria-label="youtube" role="img" class="youtube" width="23" height="18" viewBox="0 0 23 18" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z" />
                 </svg>
@@ -351,7 +368,7 @@
 
           <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-            <svg class="htmlacademy-link-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
+            <svg   aria-label="html academy" role="img"  class="htmlacademy-link-svg" width="115" height="34" viewBox="0 0 115 34" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" />
               <path
@@ -412,7 +429,7 @@
                 <h1 class="modal-text3">Взрослые:</h1>
                 <button class="minus" type="button" id="adults">
                   <div class="minus-container">
-                    <svg class="vector-minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                    <svg  aria-label="минус" role="img" class="vector-minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" />
                     </svg>
@@ -421,7 +438,7 @@
                 <input class="field-number" type="text" id="adults" name="adults" value="2">
                 <button class="plus" type="button">
                   <div class="plus-container">
-                    <svg class="vector-plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    <svg  aria-label="плюс" role="img" class="vector-plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
                     </svg>
@@ -432,20 +449,20 @@
                   title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</button>
                 <button class="minus" type="button">
                   <div class="minus-container">
-                  <svg class="vector-minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0L0 2L14 2V0L0 0Z"  />
-                  </svg>
+                    <svg  aria-label="минус" role="img" class="vector-minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" />
+                    </svg>
                   </div>
                 </button>
                 <input class="field-number" type="text" id="child
               5" name="child" value="2">
                 <button class="plus" type="button">
                   <div class="plus-container">
-                  <svg class="vector-plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"  />
-                  </svg>
+                    <svg  aria-label="плюс" role="img" class="vector-plus" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
                   </div>
                 </button>
               </div>
