@@ -309,7 +309,9 @@ body {
 }
 
 .promo-logo::after {
-  background: url(../images/vector.svg);
+  content: url(../images/vector.svg);
+  height: 57px;
+  margin-top: auto;
 }
 
 .img-welcome {
