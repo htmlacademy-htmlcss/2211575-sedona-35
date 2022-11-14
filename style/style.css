@@ -869,45 +869,31 @@ body {
 }
 
 .minus {
-  padding: 0;
+  position: relative;
+  display: flex;
+  background:url(../images/vector-icon/minus.svg) no-repeat center #F2F2F2;
+  padding:0;
   border: none;
   width: 40px;
   height: 48px;
   outline: none;
 }
 
-.minus-container {
-  width: 20px;
-  height: 20px;
-  margin: 14px 10px;
-}
 
 
-
-
-.vector-minus {
-  fill: #CDC7C4;
-  width: 14px;
-  height: 2px;
-}
-
-.minus:hover > div > svg {
-  fill: black;
-  opacity: none;
+.minus:hover {
+  background:url(../images/vector-icon/minus-hover.svg) no-repeat center #F2F2F2;
 
 }
 
-.minus:focus > div {
-  outline: solid #82B3D3;
-  border-radius: 4px;
+.minus:focus {
+  background:url(../images/vector-icon/minus-focus.svg) no-repeat center #F2F2F2;
 
 }
 
-.minus:active > div > svg,
-.minus:active > div {
-  fill: #CDC7C4;
-  opacity: none;
-  outline: none;
+.minus:active {
+  background:url(../images/vector-icon/minus.svg) no-repeat center #F2F2F2;
+
 }
 
 
@@ -924,46 +910,32 @@ body {
 }
 
 .plus {
-  padding: 0;
+  position: relative;
+  display: flex;
+  background:url(../images/vector-icon/plus.svg) no-repeat center #F2F2F2;
+  padding:0;
   border: none;
-  outline: none;
   width: 40px;
   height: 48px;
-}
-
-.plus-container {
-  width: 20px;
-  height: 20px;
-  margin: 14px 10px;
-}
-
-
-
-
-.vector-plus {
-  fill: #CDC7C4;
-  width: 14px;
-  height: 14px;
-  margin: 3px 0 0 0;
-}
-
-.plus:hover > div > svg {
-  fill: black;
-  opacity: none;
-
-}
-
-.plus:focus > div {
-  outline: solid #82B3D3;
-  border-radius: 4px;
-
-}
-
-.plus:active > div > svg,
-.plus:active > div {
-  fill: #CDC7C4;
-  opacity: none;
   outline: none;
+}
+
+
+
+.plus:hover {
+  background:url(../images/vector-icon/plus-hover.svg) no-repeat center #F2F2F2;
+  
+
+}
+
+.plus:focus {
+  background:url(../images/vector-icon/plus-focus.svg) no-repeat center #F2F2F2;
+
+}
+
+.plus:active {
+  background:url(../images/vector-icon/plus.svg) no-repeat center #F2F2F2;
+
 }
 
 .modal-text4 {
@@ -1056,7 +1028,7 @@ body {
 
 }
 
-.modal-container-close {
+.modal-container-clos {
   display: none;
 }
 
@@ -1231,7 +1203,7 @@ li {
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    
+
 }
 
 .range-input:focus {
