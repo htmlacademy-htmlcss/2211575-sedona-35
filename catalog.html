@@ -99,14 +99,14 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control option  " >
-                        <input class="control-input" type="checkbox" name="pool">
+                        <input class="control-input" type="checkbox" name="pool" checked>
                         <span class="control-box"></span>
                         Бассейн
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="control option  " >
-                        <input class="control-input" type="checkbox" name="parking" >
+                        <input class="control-input" type="checkbox" name="parking" checked>
                         <span class="control-box"></span>
                         Парковка
                       </label>
@@ -126,21 +126,21 @@
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="radio-control option " >
-                        <input class="radio-control-input " value="hostel" type="radio" name="housing">
+                        <input class="radio-control-input " value="hostel" type="radio" name="housing" checked>
                         <span class="radio-control-box "></span>
                         Гостиница
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="radio-control option  " >
-                        <input class="radio-control-input" value="motel" type="radio" name="housing">
+                        <input class="radio-control-input" value="motel" type="radio" name="housing" >
                         <span class="radio-control-box"></span>
-                        мотель
+                        Мотель
                       </label>
                     </li>
                     <li class="catalog-filter-item">
                       <label class="radio-control option  " >
-                        <input class="radio-control-input" value="apartments" type="radio" name="housing">
+                        <input class="radio-control-input" value="apartments" type="radio" name="housing" >
                         <span class="radio-control-box"></span>
                         Апартаменты
                       </label>
@@ -201,7 +201,7 @@
               <img class="img-button" src="images/vector-icon/filter-button2.svg" alt="Показать большие окна."
                 width="16px" height="14px">
             </a>
-            <a class="button button-and catalog-group" href="#">
+            <a class="button  catalog-group" href="#" style="margin-right:0;">
               <img class="img-button" src="images/vector-icon/filter-button3.svg" alt="Показать список." width="16px"
                 height="14px">
             </a>
@@ -410,17 +410,17 @@
             <div class="field-group">
               <div class="modal-input-container">
                 <h1 class="modal-text">Дата Заезда:</h1>
-                <input class="search-form-field field" type="text" id="check-in" name="check-in" value="27 апреля 2020">
+                <input class="search-form-field field" type="text" id="check-in" name="check-in" placeholder="Укажите дату">
 
               </div>
-              <h2 class="modal-subtext modal-error">Мы не можем отправить вас в прошлое.</h2>
+              <p class="modal-subtext modal-error">Мы не можем отправить вас в прошлое.</p>
             </div>
 
             <div class="field-group">
               <div class="modal-container2">
                 <h1 class="modal-text2">Дата Выезда:</h1>
                 <input class="search-form-field field" type="text" id="departure" name="departure"
-                  value="1 сентября 2023 ">
+                  placeholder="укажите дату">
               </div>
               <p class="modal-subtext">На эти даты есть свободные номера. Пока есть.</p>
             </div>
@@ -445,8 +445,7 @@
                   </div>
                 </button>
                 <h1 class="modal-text4">Дети:</h1>
-                <button id="btn-tooltip" class="button-more-info"
-                  title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</button>
+                <span  class="tooltip" ></span>
                 <button class="minus" type="button">
                   <div class="minus-container">
                     <svg  aria-label="минус" role="img" class="vector-minus" width="14" height="2" viewBox="0 0 14 2" fill="none"

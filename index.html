@@ -70,7 +70,7 @@
         <section class="promo">
           <h1 class="visually-hidden">Лого седона</h1>
           <div class="promo-logo">
-            <img class="img-welcome" src="images/vector-icon/welcome.svg" alt="welcome." height="352px" width="458px" >
+              <img class="img-welcome" src="images/vector-icon/welcome.svg" alt="welcome." height="352px" width="458px" >
           </div>
         </section>
 
@@ -151,7 +151,7 @@
             <p class="total-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в
               Седоне
             </p>
-            <div class="border">
+            <div class="total-button-container">
               <a href="catalog.html" class="total-button"> Поиск гостиницы в седоне</a>
             </div>
           </div>
@@ -252,17 +252,17 @@
             <div class="field-group">
               <div class="modal-input-container">
                 <h1 class="modal-text">Дата Заезда:</h1>
-                <input class="search-form-field field" type="text" id="check-in" name="check-in" value="27 апреля 2020" required>
+                <input class="search-form-field field" type="text" id="check-in" name="check-in" placeholder="укажите дату" required>
 
               </div>
-              <h2 class="modal-subtext modal-error">Мы не можем отправить вас в прошлое.</h2>
+              <p class="modal-subtext modal-error">Мы не можем отправить вас в прошлое.</p>
             </div>
 
             <div class="field-group">
               <div class="modal-container2">
                 <h1 class="modal-text2">Дата Выезда:</h1>
                 <input class="search-form-field field" type="text" id="departure" name="departure"
-                  value="1 сентября 2023 " required>
+                  placeholder="укажите дату" required>
               </div>
               <p class="modal-subtext">На эти даты есть свободные номера. Пока есть.</p>
             </div>
@@ -287,8 +287,7 @@
                   </div>
                 </button>
                 <h1 class="modal-text4">Дети:</h1>
-                <button id="btn-tooltip" class="button-more-info"
-                  title="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">i</button>
+                <span  class="tooltip" ></span>
                 <button class="minus" type="button">
                   <div class="minus-container">
                   <svg  aria-label="минус" role="img" class="vector-minus" width="14" height="2" viewBox="0 0 14 2" fill="none"
